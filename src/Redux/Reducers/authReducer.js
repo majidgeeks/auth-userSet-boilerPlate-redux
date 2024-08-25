@@ -1,7 +1,7 @@
 const initialState = {
     user: null,
     token: '',
-    isOnboarding: false,
+    onBoarding : '',
     isLoading: false,
     error: "",
   };
@@ -17,7 +17,7 @@ const initialState = {
         case 'SET_ONBOARDING':
             return{
                 ...state,
-                isOnboarding: action.payload,
+                onBoarding: action.payload,
             };
         case "SET_USER":
             return{

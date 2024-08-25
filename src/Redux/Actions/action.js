@@ -34,9 +34,9 @@ export const logoutUser = () => {
     type: "LOGOUT",
   };
 };
-export const setOnboarding = (payload) => {
+export const setOnboarding = (text) => {
   return {
     type: "SET_ONBOARDING",
-    payload,
+    payload : text
   };
 };
